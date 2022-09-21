@@ -1,4 +1,4 @@
-# Single-cell-MSIsensor
+## Single-cell-MSIsensor
 sample=$1
 
 ## split bam
