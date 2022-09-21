@@ -50,7 +50,9 @@ mkdir -p MSI_outputs/${sample}
 
 echo "Calculating msi score ..."
 
-/diskmnt/Projects/Users/ysong/program/msisensor/msisensor msi -d /diskmnt/Projects/Users/ysong/project/MSISensor_testing/mCRC/microsatellites.list -n ./split_BAMs/${sample}/Normal.sorted.bam -t ./split_BAMs/${sample}/Tumor.sorted.bam -b 25 -l 1 -q 1 -o ./MSI_outputs/${sample}
+/diskmnt/Projects/Users/ysong/program/msisensor/msisensor msi -d /diskmnt/Projects/Users/ysong/project/MSISensor_testing/mCRC/microsatellites.list -n /diskmnt/Projects/Users/Evan.p/msi_test/split_BAMs/${sample}/Normal.sorted.bam -t /diskmnt/Projects/Users/Evan.p/msi_test/split_BAMs/${sample}/Tumor.sorted.bam -b 25 -l 1 -q 1 -o MSI_outputs/${sample}
+
+
 
 
 echo "All done."
