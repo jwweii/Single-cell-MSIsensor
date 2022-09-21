@@ -10,7 +10,7 @@ $ while read sample; do grep {sample}/tumor_barcodes.txt; grep {sample}/normal_b
 ## msi_calculation.sh
 
 ```
-!/bin/bash
+#!/bin/bash
 
 source activate /diskmnt/Projects/Users/ysong/program/anaconda3/envs/R
 
