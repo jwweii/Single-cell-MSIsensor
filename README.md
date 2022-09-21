@@ -1,4 +1,19 @@
 ## Single-cell-MSIsensor
+
+
+## generate barcode files from metadata file (this step has already been done for test samples)
+
+$ while read sample; do grep {sample}/tumor_barcodes.txt; grep {sample}/normal_barcodes.txt; cat cell_type_annotation/${sample}/tumor_barcodes.txt cell_type_annotation/${sample}/normal_barcodes.txt > cell_type_annotation/${sample}/tumor_normal_barcodes.txt; done < test_samples.txt
+
+## split bams into tumor.bam and normal.bam then calculate msi score
+
+msi_calculation.sh
+
+```
+!/bin/bash
+
+source activate /diskmnt/Projects/Users/ysong/program/anaconda3/envs/R
+
 sample=$1
 
 ## split bam
