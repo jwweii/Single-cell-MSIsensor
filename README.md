@@ -24,7 +24,7 @@ cd split_BAMs/${sample}
 
 echo "Splitting bam ..."
 
-sinto filterbarcodes -b /diskmnt/Projects/MetNet_analysis_2/Colorectal/cellranger/cellranger-v6/${sample}/outs/possorted_genome_bam.bam -c /diskmnt/Projects/Users/ysong/project/MSISensor_testing/mCRC/cell_type_annotation/${sample}_c5/tumor_normal_barcodes.txt -p 50 >> ${sample}.sinto.err
+sinto filterbarcodes -b /diskmnt/Projects/MetNet_analysis_2/Colorectal/cellranger/cellranger-v6/${sample}/outs/possorted_genome_bam.bam -c /diskmnt/Projects/Users/Evan.p/msi_test/cell_type_annotation/${sample}/normal_tumor_barcode.txt -p 50 >> ${sample}.sinto.err
 
 echo "Splitting done."
 
@@ -50,7 +50,7 @@ mkdir -p MSI_outputs/${sample}
 
 echo "Calculating msi score ..."
 
-/diskmnt/Projects/Users/ysong/program/msisensor/msisensor msi -d /diskmnt/Projects/Users/ysong/project/MSISensor_testing/mCRC/microsatellites.list -n /diskmnt/Projects/Users/Evan.p/msi_test/split_BAMs/${sample}/Normal.sorted.bam -t /diskmnt/Projects/Users/Evan.p/msi_test/split_BAMs/${sample}/Tumor.sorted.bam -b 25 -l 1 -q 1 -o MSI_outputs/${sample}
+/diskmnt/Projects/Users/ysong/program/msisensor/msisensor msi -d /diskmnt/Projects/Users/ysong/project/MSISensor_testing/mCRC/microsatellites.list -n /diskmnt/Projects/Users/Evan.p/msi_test/split_BAMs/${sample}/Normal.sorted.bam -t /diskmnt/Projects/Users/Evan.p/msi_test/split_BAMs/${sample}/Tumor.sorted.bam -b 25 -l 1 -q 1 -o /MSI_outputs/${sample}/${sample}
 
 
 
