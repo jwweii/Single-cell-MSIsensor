@@ -56,3 +56,5 @@ echo "Calculating msi score ..."
 
 
 echo "All done."
+
+less ./MSI_outputs/${sample}/${sample}
