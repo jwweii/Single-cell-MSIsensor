@@ -58,3 +58,5 @@ echo "Calculating msi score ..."
 echo "All done."
 
 less ./MSI_outputs/${sample}/${sample}
+
+/diskmnt/Projects/Users/ysong/program/msisensor/msisensor msi -d /diskmnt/Projects/Users/Evan.p/msi_test/microsatellites38.list -n /diskmnt/Projects/MetNet_analysis_2/Colorectal/WES_alignment/01.ST_20220613/mark_dup_bam/HT307C1-Jm1D1_1.N.bam  -t /diskmnt/Projects/MetNet_analysis_2/Colorectal/WES_alignment/01.ST_20220613/mark_dup_bam/HT307C1-TH1K1A3D1.N.bam  -b 25 -l 1 -q 1 -o MSI_outputs/bulk/HT307C1_recheck
